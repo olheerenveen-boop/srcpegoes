@@ -350,3 +350,107 @@ header {
         font-size: 0.95rem;
         }
 
+        .logo-area h2 {
+            margin-left: 10px;
+        }
+
+        /* ORGANOGRAMA BASE */
+
+        .org-container {
+            padding: 20px 10px;
+        }
+
+        .org-card {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        .org-title {
+            background: var(--azul-clube);
+            color: white;
+            padding: 12px;
+            border-radius: 8px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .org-item {
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .org-item:last-child {
+            border-bottom: none;
+        }
+
+        .cargo {
+            font-weight: bold;
+            color: #222;
+        }
+
+        .nome {
+            color: #555;
+        }
+
+        .logo-area h2 {
+            margin-left: 10px;
+        }
+
+        /* NAVBAR DOS ESCALÕES */
+
+        .escaloes-navbar {
+            background-color: white;
+            margin: 20px 10px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .escaloes-navbar h3 {
+            background-color: var(--azul-clube);
+            color: white;
+            margin: 0;
+            padding: 15px;
+            font-size: 1.1rem;
+        }
+
+        .escaloes-navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .escaloes-navbar li {
+            border-bottom: 1px solid #ddd;
+        }
+
+        .escaloes-navbar li:last-child {
+            border-bottom: none;
+        }
+
+        .escaloes-navbar a {
+            display: block;
+            padding: 15px;
+            text-decoration: none;
+            color: #222;
+            transition: 0.3s;
+            font-weight: 500;
+        }
+
+        .escaloes-navbar a:hover {
+            background-color: var(--azul-clube);
+            color: white;
+            padding-left: 22px;
+        }
+
+        /* CONTEÚDO */
+
+        .content-section {
+            padding: 20px;
+            background: white;
+            margin: 10px;
+            border-radius: 8px;
+        }
+
