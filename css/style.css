@@ -1,0 +1,352 @@
+:root {
+    --azul-clube: #0047AB;
+    --branco: #ffffff;
+    --cinza: #f4f4f4;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    background-color: var(--cinza);
+    overflow-x: hidden;
+}
+
+header {
+    background-color: var(--azul-clube);
+    color: var(--branco);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Estilo do Botão 3 Pontos/Traços */
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.dot {
+    width: 25px;
+    height: 3px;
+    background-color: var(--branco);
+    border-radius: 2px;
+}
+
+/* Navbar Lateral (Escondida por padrão) */
+.nav-menu {
+    position: fixed;
+    top: 60px;
+    right: -100%; /* Escondido fora da tela */
+    width: 250px;
+    height: 100vh;
+    background-color: var(--azul-clube);
+    transition: 0.4s;
+    z-index: 999;
+}
+
+.nav-menu.active {
+    right: 0; /* Desliza para dentro */
+}
+
+.nav-menu ul {
+    list-style: none;
+    padding: 20px;
+}
+
+.nav-menu ul li {
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.nav-menu ul li a {
+    color: var(--branco);
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+/* Carrossel Automático */
+.carrossel {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    background: #000;
+    height: 250px;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    height: 100%;
+}
+
+.slide img {
+    height: 250px;
+    object-fit: cover;
+}
+
+.legenda {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background: rgba(0,0,0,0.5);
+    padding: 10px 0;
+}
+
+/* Fade animação */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+.content-section {
+    padding: 20px;
+    background: white;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+}
+
+.logo-imagem {
+    height: 40px; /* Ajuste a altura conforme preferir para o topo */
+    width: auto;  /* Mantém a proporção */
+    display: block;
+}
+
+.logo-area h2 {
+            margin-left: 10px;
+        }
+
+        /* IMAGEM DA EQUIPA */
+
+        .equipa-imagem {
+            margin: 20px 10px;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        /* IMAGEM DA EQUIPA (PADRÃO PARA TODOS OS ESCALÕES) */
+
+        .equipa-imagem {
+        margin: 20px 10px;
+        background: white;
+        border-radius: 8px;
+        overflow: hidden;
+        }
+
+        /* caixa da imagem com altura fixa */
+        .equipa-imagem img {
+        width: 100%;
+        height: 250px;      /* 👈 todas iguais */
+        object-fit: cover;  /* 👈 corta sem deformar */
+        display: block;
+        }
+
+        .equipa-imagem h2 {
+            padding: 15px;
+            margin: 0;
+        }
+
+        /* SEÇÕES */
+
+        .content-section {
+            background: white;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .content-section h2 {
+            color: var(--azul-clube);
+            margin-top: 0;
+        }
+
+        /* LISTAS */
+
+        .jogadores-lista,
+        .staff-lista {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .jogadores-lista li,
+        .staff-lista li {
+            padding: 12px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .jogadores-lista li:last-child,
+        .staff-lista li:last-child {
+            border-bottom: none;
+        }
+
+        /* POSIÇÕES */
+
+        .posicao {
+            color: var(--azul-clube);
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .logo-area h2 {
+            margin-left: 10px;
+        }
+
+        /* BLOCO CALENDÁRIO */
+
+        .calendario-section {
+            margin: 20px 10px;
+        }
+
+        .cal-titulo {
+            background: var(--azul-clube);
+            color: white;
+            padding: 12px;
+            border-radius: 8px 8px 0 0;
+            margin: 0;
+        }
+
+        .cal-bloco {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .cal-desc {
+            padding: 15px;
+            color: #333;
+        }
+
+        .logo-area h2 {
+            margin-left: 10px;
+        }
+
+        /* BLOCO PRINCIPAL */
+
+        .campo-section {
+            background: white;
+            margin: 20px 10px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .campo-info {
+            padding: 20px;
+        }
+
+        .campo-info h2 {
+            color: var(--azul-clube);
+            margin-top: 0;
+        }
+
+        .campo-info p {
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* BOTÃO MAPS */
+
+        .maps-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 18px;
+            background: var(--azul-clube);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        .maps-btn:hover {
+            opacity: 0.9;
+        }
+
+        .logo-area h2 {
+            margin-left: 10px;
+        }
+
+        /* ÁREA CONTACTOS */
+
+        .contactos-container {
+            padding: 20px 10px;
+        }
+
+        .contactos-texto {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .contactos-texto h2 {
+            color: var(--azul-clube);
+            margin-top: 0;
+        }
+
+
+        /* SOCIAL CARDS */
+
+        .social-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        background: white;
+        padding: 25px;
+        border-radius: 12px;
+        margin-bottom: 15px;
+
+        text-decoration: none;
+        color: #222;
+
+        transition: 0.3s;
+
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .social-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+        }
+
+        .social-card img {
+        width: 65px;
+        height: 65px;
+        object-fit: contain;
+        margin-bottom: 12px;
+        }
+
+        .social-card h3 {
+        margin: 0;
+        color: var(--azul-clube);
+        }
+
+        .social-card p {
+        margin-top: 8px;
+        color: #666;
+        font-size: 0.95rem;
+        }
+

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Escalões - S.R.C. PEGÕES</title>
+
+    <link rel="icon" type="image/png" href="/imagens/logo.png">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <style>
+
+        .logo-area h2 {
+            margin-left: 10px;
+        }
+
+        /* NAVBAR DOS ESCALÕES */
+
+        .escaloes-navbar {
+            background-color: white;
+            margin: 20px 10px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .escaloes-navbar h3 {
+            background-color: var(--azul-clube);
+            color: white;
+            margin: 0;
+            padding: 15px;
+            font-size: 1.1rem;
+        }
+
+        .escaloes-navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .escaloes-navbar li {
+            border-bottom: 1px solid #ddd;
+        }
+
+        .escaloes-navbar li:last-child {
+            border-bottom: none;
+        }
+
+        .escaloes-navbar a {
+            display: block;
+            padding: 15px;
+            text-decoration: none;
+            color: #222;
+            transition: 0.3s;
+            font-weight: 500;
+        }
+
+        .escaloes-navbar a:hover {
+            background-color: var(--azul-clube);
+            color: white;
+            padding-left: 22px;
+        }
+
+        /* CONTEÚDO */
+
+        .content-section {
+            padding: 20px;
+            background: white;
+            margin: 10px;
+            border-radius: 8px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+        <div class="logo-area">
+            <img src="/imagens/Logo.png" alt="Logo S.R.C. PEGÕES" class="logo-imagem">
+            <h2>S.R.C. PEGÕES</h2>
+        </div>
+
+        <button id="menu-btn" class="hamburger">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </button>
+    </header>
+
+    <!-- NAVBAR PRINCIPAL -->
+
+    <nav id="main-nav" class="nav-menu">
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="escaloes.html">Escalões</a></li>
+            <li><a href="calendario.html">Calendário</a></li>
+            <li><a href="direcao.html">Direção</a></li>
+            <li><a href="equipamentos.html">Equipamentos</a></li>
+            <li><a href="campo.html">O Campo</a></li>
+            <li><a href="contactos.html">Contactos</a></li>
+        </ul>
+    </nav>
+
+    <!-- CONTEÚDO -->
+
+    <main>
+
+        <!-- NAVBAR DOS ESCALÕES -->
+
+        <section class="escaloes-navbar">
+
+            <h3>Escalões</h3>
+
+            <ul>
+                <li><a href="escaloes1seniores.html">Seniores</a></li>
+                <li><a href="escaloes2juvenis.html">Juvenis</a></li>
+                <li><a href="escaloes3iniciados.html">Iniciados</a></li>
+                <li><a href="escaloes4infantis.html">Infantis</a></li>
+                <li><a href="escaloes5banjamins.html">Benjamins</a></li>
+                <li><a href="escaloes6petizestraquinas.html">Petizes / Traquinas</a></li>
+            </ul>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer>
+        <p>&copy; 2026 S.R.C. PEGÕES - Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
